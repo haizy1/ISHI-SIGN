@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> 
+  <title>Payment form</title>
+  <link rel="stylesheet" href="{% static 'paiement/payment.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Form</h1>
+    <p>Please fill out the following form</p>
+    <form id="payment-form">
+      <label for="fisrtName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <!-- Choosing the service-->
+
+      <label for="service" id="service-select">Choose service:</label>
+      <select id="service" onchange="showServiceFields()">
+        <option value=""  selected disabled >Select Service</option>
+        <option value="service1">DIGITAL SIGNATURE</option>
+        <option value="service2">CERTIFICATE</option>
+        <option value="service3">CERTIFICAT VERIFICATION</option>
+      </select>
+
+      <!-- If  choose Digital signature-->
+      <div id="service1-fields" style="display: none;">
+        <label for="file">Select the file to sign:</label>
+        <input type="file" id="file" name="file" required>
+        <label for="output_path">Enter the signed file name:</label>
+        <input type="text" id="output_path" name="output_path" placeholder="file name" required>
+      </div>
+
+        <!-- If choose a Certificate-->
+
+      <div id="service2-fields" style="display: none;">
+        <label for="field1-service2">Common Name:</label>
+        <input type="text" id="common-name" name="commonname" placeholder="Common Name" required>
+        <label for="field1-service2">Country Name:</label>
+        <input type="text" id="country-name" name="countryname" placeholder="Country Name" required>
+        <label for="field1-service2">State or Province Name:</label>
+        <input type="text" id="state-prov-name" name="stateprovname" placeholder="State or Province Name" required>
+        <label for="field1-service2">Locality Name:</label>
+        <input type="text" id="locality-name" name="localityname" placeholder="Locality Name" required>
+        <label for="field1-service2">Organization Name:</label>
+        <input type="text" id="org-name" name="orgname" placeholder="Organization Name" required>
+
+        
+      </div>
+
+       <!-- If choose Certificate verification -->
+      <div id="service3-fields" style="display: none;"> 
+        <label for="field1-service3">Web Site:</label>
+        <input type="url" id="field1-service3" name="field1-service3" placeholder="url" required>
+
+      </div> 
+    
+      <!-- Choosing the payment method-->
+
+      <label for="payment-method" id="method-select" >Payment Method:</label>
+      <select id="payment-method" onchange="showPaymentFields()">
+        <option value="" selected disabled >Select Payment Method</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer"> Bank Account</option>
+      </select>
+
+      <!-- If choose to pay with a credit card-->
+      <div id="credit-card-fields" style="display: none;">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+        <label for="cardholder">Cardholder Name:</label>
+        <input type="text" id="cardholder" name="cardholder" placeholder="Cardholder Name" required>
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+        <label for="cvv">Verification code:</label>
+        <input type="text" id="vc" name="Verificationcode" placeholder="Verification Code" required >
+      </div>
+
+      <!-- If choose to pay with Paypal-->
+      <div id="paypal-fields" style="display: none;">
+        <label for="paypal-payment">Pay here:</label>
+        <input type="button" id="paypal-payment" name="paypal-payment" value="Go to my account" onclick="window.location.href='https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Ftransfer&state=%2F&country.x=MA&locale.x=en_US&langTgl=en';">
+      </div>
+
+       <!-- If choose to pay with a Bank Transfer-->
+      <div id="bank-transfer-fields" style="display: none;">
+        <label for="bankholder">Bank Account Holder's Name:</label>
+        <input type="text" id="bank-account-holder-name" name="bank-account-holder-name" placeholder="Bank Account Holde's Name" required>
+        <label for="bankaccount">Bank Account Number(full number):</label>
+        <input type="text" id="bank-account" name="bank-account" placeholder="Bank Account Number" required>
+        <label for="billingaddress">Billing Addresse:</label>
+        <input type="text" id="billing-addresse" name="billing-addresse" placeholder="Billing Addresse" required>
+      </div>
+
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+    
+  <footer>
+    &copy; <i>ISHI-Sign</i> | All rights reserved.
+  </footer>
+
+  <script>
+    function showPaymentFields() {
+      var paymentMethod = document.getElementById("payment-method").value;
+
+      // Hide all payment fields
+      var paymentFields = document.querySelectorAll("#payment-form > div");
+      for (var i = 0; i < paymentFields.length; i++) {
+        paymentFields[i].style.display = "none";
+      }
+
+      // Show fields for the selected payment method
+      if (paymentMethod !== "") {
+        var selectedFields = document.getElementById(paymentMethod + "-fields");
+        selectedFields.style.display = "block";
+      }
+    }
+
+
+    function showServiceFields() {
+      var service = document.getElementById("service").value;
+
+      // Hide all service fields
+      var serviceFields = document.querySelectorAll("#payment-form > div[id$='-fields']");
+      for (var i = 0; i < serviceFields.length; i++) {
+        serviceFields[i].style.display = "none";
+      }
+
+      // Show fields for the selected service
+      if (service !== "") {
+        var selectedFields = document.getElementById(service + "-fields");
+        selectedFields.style.display = "block";
+      }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("service").selectedIndex = 0;
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("payment-method").selectedIndex = 0;
+    });
+    
+  </script>
+</body>
+</html>

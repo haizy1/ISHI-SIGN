@@ -1,0 +1,575 @@
+	
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #1B1B1B ;
+		font-family: 'Varela Round', sans-serif;
+		font-size: 11pt;
+		font-weight: 400;
+		color: #000000;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/* top: -40px; */
+	}
+	
+	ol, ul{
+		margin-top: 0;
+		position: relative;
+		top: 70px;
+		padding: 0;
+		list-style: none;
+	}
+	
+	p{
+		line-height: 180%;
+	}
+	
+	a{
+		color: #0000FF;
+	}
+	
+	a:hover{
+		text-decoration: none;
+	}
+	
+
+	.container{
+		margin: 0px auto;
+		width: 1200px;
+	}
+
+
+/******************************Social Icon Styles ***************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 1em 0em 0em 0em;
+		list-style: none;
+		position: absolute;
+		top: auto;
+		left: 701px;
+		display: inline-block;
+		
+	
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.20em;
+		font-size: 1.2em;
+		
+	}
+	
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: rgba(255,255,255,1);
+	}
+	
+	ul.contact li 
+	{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 30px;
+		text-align: center;
+	}
+
+	li#git{
+		background-color: black;
+	}
+
+	li#linked{
+		background-color: #0A66C2;
+	}
+	
+/*******************************Button Style **************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		padding: 0.6em 1em;
+		background: #0505a5 ;
+		border-radius: 4px;
+		line-height: 1.8em;
+		text-decoration: none;
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+	
+	.button:before
+	{
+		display: inline-block;
+		background: #8DCB89;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+	
+	
+		
+
+/********************************Heading Titles*******************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+	}
+	
+	.title h2
+	{
+		font-size: 2.8em;
+		color: #261300;
+	}
+	
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.1em;
+		color: #6F6F6F;
+	}
+
+/*******************************Header**************************************************/
+
+	#header-wrapper
+	{
+		overflow: hidden;
+		padding: 26px;
+		
+	}
+
+	#header
+	{
+		
+  		margin-bottom: 0px;
+		font-family: Georgia serif;
+		font-size: 50px;
+		color: #0505a5 ;
+		font-size: 10px;
+		left: 2px;
+		top:-45px;
+		
+		
+	}
+	.header h1
+	{
+		font-family: 'Times New Roman', Times, serif;
+		color: #08087b;
+		
+	}
+
+
+/*****************************Logo****************************************************/
+
+	
+	#logo {
+		display: flex;
+		align-items: center;
+		left: 0px;
+		
+		
+	}
+
+	#logo img {
+		width: 40px; /* Adjust the width as needed */
+		height: auto; /* Maintain the aspect ratio */
+		margin-right: 8px; /* Add spacing between the logo and text */
+		top:-20px;
+		position: relative;
+		left: -120px;
+
+
+	}
+
+	#logo h1 {
+		margin: 0;
+		font-size: 30px; /* Adjust the font size as desired */
+		top:-16px;
+		left: -120px;
+	}
+
+
+/*****************************Menu ****************************************************/
+
+	#menu
+	{
+	position: absolute;
+	top: -48px;
+	right: 60px;
+	background-color: #f1f1f1;
+	font-size: 8pt;
+	}
+	
+	#menu ul
+	{
+		text-align: center;
+		
+
+	}
+	
+	#menu li
+	{
+		display: inline-block;
+	}
+	
+	#menu li a, #menu li span
+	{
+		display: inline-block;
+		margin-left: 0.50em;
+		padding: 1em 1.5em;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 0;
+		color: #0505a5;
+	}
+	
+	
+	
+	#menu .current_page_item a
+	{
+		border: 1px solid #0505a5;
+		border-radius: 2px;
+	}
+	
+
+
+
+
+/********************************Wrapper *************************************************/
+
+	#wrapper1
+	{
+		background: #b8d3f2;
+	}
+
+	#wrapper2
+	{
+		background: #3131de b;
+		background-image: url("circle.jpg"); 
+		background-position: 0%;
+
+	}
+
+	#wrapper3
+	{
+		overflow: hidden;
+		padding: 0em 0em 8em 0em;
+		background: #b8d3f2;
+		
+	}
+	
+	#wrapper4
+	{
+		overflow: hidden;
+		padding: 8em 0em 4em 0em;
+	}
+
+
+/**********************************Welcome***********************************************/
+
+	#welcome
+	{
+		overflow: hidden;
+		width: 1000px;
+		height: 90px;
+		padding: 4em 2rem;
+		text-align: center;
+		color: rgba(255,255,255,0.4);
+	}
+	
+	#welcome .content
+	{
+		padding: 5em 5em;
+	}
+	
+	#welcome .title h3
+	{
+		color: rgba(255,255,255,1);
+	}
+	#welcome p{
+		font-size: 15px;
+		color: rgb(200, 182, 182);
+		margin: 0px;
+
+	}
+	
+	
+/*********************************Footer************************************************/
+
+	#footer
+	{
+		padding: 3em 0em 7em 0em;
+		background-color: rgb(188, 24, 24);
+		background-image: url('circle.jpg');
+		text-align: center;
+		height: 111px;
+		width: 100%;
+		align-items: center;
+	}
+
+	
+	#footer .title h2
+	{
+		color: rgba(255,255,255,1);
+		font-family: Georgia serif;
+	}
+
+
+	#footer .title .byline
+	{
+		letter-spacing: normal;
+		text-transform: capitalize;
+		font-size: 1.6em;
+		color: #b8d3f2;
+	}
+/************************************Copyright*********************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 0em 0em;
+		border-top: 0px solid ;
+		background-color: #b8d3f2;
+		width: 100%;
+	}
+	
+	#copyright p
+	{
+		text-align: center;
+		color: #0505a5;
+		font-size: 15px;
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		font-style: italic;
+		font-weight: bold;
+		color:#2828dc;
+	}
+
+
+	
+/* *****************************Portfolio**************************** */
+
+
+	#portfolio
+	{
+		padding-top: 8em;
+	}
+	
+	#portfolio .box
+	{
+		text-align: center;
+		color: rgba(0,0,0,0.7);
+	}
+	
+	#portfolio h3
+	{
+		display: block;
+		padding-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1em;
+		color: rgba(0,0,0,0.9);
+	}
+
+	#portfolio .title
+	{
+		margin-bottom: 5em;
+		text-align: center;
+		flex-direction: column;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#portfolio .title h2
+	{
+		position: relative;
+		top: -30px;
+		color: #0505a5;
+		font-family:Georgia serif;
+	}
+
+	#portfolio .title .byline
+	{
+		letter-spacing: normal;
+		text-transform: none;
+		font-size: 1.6em;
+		color: rgba(0,0,0,0.6);
+		font-family: Arial, sans-serif;
+	}
+	
+	#portfolio .icon
+	{
+		display: inline-block;
+		margin-bottom: 2em;
+		font-size: 1.6em;
+		color: rgba(0,0,0,0.8);
+	}
+
+	.columns {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 400px;
+	}
+	  
+	.column {
+	flex: 1;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 10px; /* Add spacing between columns if desired */
+	}
+	
+	.box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	/* text-align: justify; */
+	}
+	
+	.box p {
+	flex-grow: 1;
+	}
+
+	.box .icon i {
+		color: #0505a5 ;
+	}
+	
+	  
+	  
+
+	/**************************** The three Columns***************************/
+
+	#three-column
+	{
+		overflow: hidden;
+		padding-bottom: 4em;
+		text-align: center;
+	}
+	
+	#three-column h2
+	{
+		margin: 1em 0em;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+	
+	#three-column .icon
+	{
+		position: relative;
+		display: block;
+		margin: 0px auto 0.80em auto;
+		line-height: 150px;
+		font-size: 4em;
+		width: 150px;
+		height: 150px;
+		border-radius: 100px;
+		text-align: center;
+		color: #632F00;
+		
+	}
+		
+	#three-column #tbox1,
+	#three-column #tbox2,
+	#three-column #tbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 80px 40px 80px 40px;
+	}
+	
+	#three-column .title
+	{
+		letter-spacing: 0.10em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	#three-column .title h2
+	{
+		font-size: 1.60em;
+		font-weight: 900;
+		font-family: 'Open Sans', sans-serif;
+		color: #261300;
+	}
+	
+	#three-column .title .byline
+	{
+		padding-top: 0.50em;
+		font-size: 0.90em;
+		color: #858585;
+	}
+
+	#three-column .arrow-down
+	{
+		border-top-color: #292929;
+	}
+	/* *************************icons style***************************** */ 
+	
+	.icon
+	{
+		text-decoration: none;
+	}
+
+	.icon:before
+	{
+		font-size: 1.25em;
+		text-decoration: none;
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+
+	.icon-linkedin-sign:before        { content: "\f08c"; }
+	.icon-github-sign:before          { content: "\f092"; }
+	.icon-github:before               { content: "\f09b"; }
+	.icon-linkedin:before             { content: "\f0e1"; }
+	.icon-github-alt:before           { content: "\f113"; }
+		
+
+		
+
+	

@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Digital Signatures</title>
+<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+<link href="{% static 'signature/sign.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+
+<div id="wrapper1">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<img src="blue.png" alt="Logo">
+				<h1>ISHI-Sign</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="/events" title="">Homepage</a></li>
+					<li><a href="#" accesskey="3" title="">About Us</a></li>
+					<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper2">
+		<div id="welcome" class="container">
+			<div class="title">
+				<h3 style="color: white; font-size: 70px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+					<i> ISHI-Sign </i>
+				</h3>
+			</div>
+			<p style="color: white; font-size: 25px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i>The ultimate solution for safeguarding your digital world!</i></p>
+		</div>
+	</div>
+		
+	<div id="wrapper3">
+		<!--left-->
+		<div id="portfolio" class="container">
+			<div class="title">
+				<h2 style="margin-left: 150px;">Digital Signatures</h2>
+				<p> 
+					A digital signature is a cryptographic technique used to ensure the authenticity,
+					integrity, and non-repudiation of digital documents or messages.
+					It provides a way to verify that a digital document or message has not been 
+					tampered with during transmission and that it was indeed sent by the claimed sender.
+				</p> 
+				<p>Here are some key points about digital signatures:</p>
+				<h4>1-Authentication:</h4>
+				<p>
+					Digital signatures provide a way to authenticate the identity of the sender of a 
+					digital document or message. The signature is generated using the sender's private key, 
+					which is unique to them, and can be verified using the corresponding public key.
+				</p>
+				<h4>2-Integrity:</h4>
+				<p>
+					Digital signatures ensure the integrity of the digital content. 
+					Any changes made to the document or message after the signature is applied will invalidate the signature. 
+					Even a small alteration in the original content will result in a completely different signature.
+				</p>
+				<h4>3-Non-repudiation:</h4>
+				<p>
+					Non-repudiation means that the signer cannot deny their involvement in the signing process. 
+					Digital signatures provide strong evidence of the origin and integrity of a document, making it difficult for 
+					the signer to repudiate their action.
+				</p>
+				<h4>4-Cryptographic Algorithms:</h4>
+				<p>
+					Digital signatures use cryptographic algorithms to generate the signature. 
+					These algorithms typically involve the use of public key cryptography, such as RSA or elliptic curve cryptography (ECC). 
+					The private key is used for signing, and the corresponding public key is used for signature verification.
+				</p>
+				<h4>5-Certificate Authorities:</h4>
+				<p>
+					In many cases, digital signatures are based on public key infrastructure (PKI) and rely on certificate authorities (CAs).
+					 CAs are trusted third-party entities that issue digital certificates, which bind a public key to an individual or organization. 
+					 These certificates are used to verify the authenticity of the public key used in the digital signature process.
+					</p>
+				<h4>6-Timestamping:</h4>
+				<p>
+					To prevent the possibility of a signed document being valid only for a limited period, 
+					digital signatures can be combined with timestamping services. Timestamping provides an additional level of assurance
+					 by proving that the document existed in a particular state at a specific point in time.
+					</p>
+				<h4>7-Use Cases:</h4>
+				<p>
+					Digital signatures are widely used in various applications, including electronic contracts,
+					 digital transactions, email communication, software distribution, and secure online document exchange. 
+					 They play a crucial role in ensuring the security and trustworthiness of digital communication and transactions.
+					</p>
+				<br>
+			<div class="button-container">
+				<a href="/paiement" class="button button-small">Get our service</a> 
+				</div>
+			</div>
+	    </div>
+	</div>
+
+<div id="footer" class="container">
+	<div class="title">
+		<h2>Get in touch</h2>
+		<span class="byline">Contact us for more informations</span> </div>
+	<ul class="contact">
+		<li id="git"><a href="#" class="icon icon-github"><span>Facebook</span></a></li>
+		<li id="linked"><a href="#" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+	</ul>
+</div>
+<div id="copyright" class="container">
+	<p>&copy;All rights reserved. | Design by <a href="#" rel="nofollow">ISHI-SIgn</a>.</p>
+</div>
+<script src="https://kit.fontawesome.com/5c5aa0d474.js" crossorigin="anonymous"></script>
+</body>
+</html>

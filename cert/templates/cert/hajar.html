@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Certificats</title>
+<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+<link href="{% static 'cert/hajar.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+
+<div id="wrapper1">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<img src="blue.png" alt="Logo">
+				<h1>ISHI-Sign</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="/events"  title="">Homepage</a></li>
+					<li><a href="#"  title="">About Us</a></li>
+					<li><a href="#"  title="">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper2">
+		<div id="welcome" class="container">
+			<div class="title">
+				<h3 style="color: white; font-size: 70px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+					<i> ISHI-Sign </i>
+				</h3>
+			</div>
+			<p style="color: white; font-size: 25px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i>The ultimate solution for safeguarding your digital world!</i></p>
+		</div>
+	</div>
+		
+	<div id="wrapper3">
+		<!--left-->
+		<div id="portfolio" class="container">
+			<div class="title">
+				<h2 style="margin-left: 150px;"> Power of Digital Certificates: Ensuring Trust and Security in the Digital Era</h2>
+				<p> 
+					In today's interconnected world, where digital communication and transactions have become the norm,
+                     establishing trust and ensuring security is paramount. 
+                     At the heart of this digital trust lies the powerful technology of digital certificates. 
+                     These electronic credentials play a pivotal role in verifying identities, securing online interactions,
+                      and safeguarding sensitive information. Let's delve into the world of digital certificates and discover 
+                      their significance in building a secure digital landscape.
+				</p> 
+                <br>
+				<p>
+					Digital certificates serve as digital passports, verifying the authenticity and integrity of individuals,
+                     organizations, and devices in the vast digital realm. These certificates are issued by trusted third-party entities called Certificate Authorities (CAs). 
+                     Acting as the guardians of trust, CAs carefully verify the identity of certificate applicants and issue digital certificates that bind a public key to that identity.
+				</p>
+                <br>
+				<p>
+					At the core of digital certificates lies the intricate web of the Public Key Infrastructure (PKI). 
+                    This infrastructure utilizes asymmetric encryption techniques and relies on digital certificates to establish secure communication channels.
+                     By leveraging digital certificates, PKI enables the encryption and decryption of sensitive information, ensuring confidentiality and protecting against unauthorized access.
+				</p>
+                <br>				
+                <p>
+					A digital certificate comprises several vital components. 
+                    The subject, representing the entity to which the certificate is issued, is accompanied by a public key that corresponds to their identity. 
+                    The issuer, typically a trusted CA, is responsible for validating and signing the certificate, creating a digital signature that verifies
+                    its authenticity. Additionally, the certificate includes a unique serial number, a validity period, and a thumbprint,
+                    which is a hash value used for quick identification.
+				</p>
+                <br>
+				<p>
+					Digital certificates form a hierarchical chain known as the certificate chain.
+                    At the top of this chain sits the root certificate, issued by a highly trusted CA.
+                    Intermediate certificates stem from the root certificate or other intermediates, and end-entity certificates, 
+                    such as SSL/TLS certificates, are derived from the intermediate certificates. This chain of trust ensures that each certificate 
+                    in the hierarchy is validated, establishing a robust foundation of trust throughout the digital ecosystem.
+				</p>
+                <br>				
+                <p>
+					One prominent application of digital certificates is in the realm of SSL/TLS certificates.
+                    These certificates are employed to secure website communication, providing encrypted and authenticated connections 
+                    between web browsers and servers. By utilizing SSL/TLS certificates, sensitive data transmitted between users and websites remains confidential, 
+                    thwarting malicious interception and tampering attempts.
+				</p>
+                <br>
+				<p>
+					Furthermore, document signing certificates offer a powerful solution for ensuring the authenticity and integrity of electronic documents. 
+                    By affixing a digital signature to a document, these certificates provide irrefutable proof of the document's origin and protect against 
+                    unauthorized modifications. Document signing certificates play a pivotal role in industries where the integrity and authenticity of digital 
+                    documents hold significant importance.
+				</p>
+				<br>
+				<p>
+					Digital certificates have revolutionized the way we establish trust and security in the digital era. 
+                    They empower individuals, organizations, and devices to engage in secure online interactions, protect sensitive information, 
+                    and foster a trustworthy digital environment. By harnessing the power of digital certificates, we can navigate the digital landscape with confidence, 
+                    knowing that our communications and transactions are shielded from unauthorized access and tampering.
+				</p>
+				<br>
+                <p>
+                    In conclusion, digital certificates are the guardians of trust in our interconnected digital world. From verifying identities and securing 
+                    online transactions to protecting sensitive information and ensuring document integrity, these electronic credentials are the bedrock of a 
+                    secure digital ecosystem. Embracing the potential of digital certificates empowers us to thrive in the digital era, where trust and security 
+                    are paramount.
+                </p>
+			<div class="button-container">
+				<a href="/paiement" class="button button-small">Get our service</a> 
+				</div>
+			</div>
+	    </div>
+	</div>
+
+<div id="footer" class="container">
+	<div class="title">
+		<h2>Get in touch</h2>
+		<span class="byline">Contact us for more informations</span> </div>
+	<ul class="contact">
+		<li id="git"><a href="#" class="icon icon-github"><span>Facebook</span></a></li>
+		<li id="linked"><a href="#" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+	</ul>
+</div>
+<div id="copyright" class="container">
+	<p>&copy;All rights reserved. | Design by <a href="#" rel="nofollow">ISHI-SIgn</a>.</p>
+</div>
+<script src="https://kit.fontawesome.com/5c5aa0d474.js" crossorigin="anonymous"></script>
+</body>
+</html>
