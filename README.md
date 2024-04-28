@@ -24,7 +24,7 @@ We offer a range of services to meet your digital signature needs:
 
  A digital signature is a cryptographic technique used to ensure the authenticity, integrity, and non-repudiation of digital documents or messages. It provides a way to verify that a digital document or message has not been tampered with during transmission and that it was indeed sent by the claimed sender.
 
-![digital signature](images/Digital_Signature.png) 
+![digital signature](images/signature.png) 
 
 **ssl Certificate validity checker** :
 
